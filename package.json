@@ -1,0 +1,14 @@
+{
+  "name": "Omnifood",
+  "version": "1.0.0",
+  "description": "Omnifood webpage",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Johnny",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

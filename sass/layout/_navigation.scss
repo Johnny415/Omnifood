@@ -1,0 +1,40 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    height: 10rem;
+    width: auto;
+    margin-top: 2rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    margin-left: 4rem;
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      display: inline-block;
+      padding: 0.5rem 0;
+      text-decoration: none;
+      font-size: 1.7rem;
+      color: #fff;
+      text-transform: uppercase;
+      border-bottom: 0.2rem solid transparent;
+      transition: border-bottom 0.2s;
+
+      &:hover,
+      &:active {
+        border-bottom: 0.2rem solid $btn-color;
+      }
+    }
+  }
+}

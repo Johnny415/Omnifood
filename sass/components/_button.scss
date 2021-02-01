@@ -1,0 +1,50 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-decoration: none;
+    border-radius: 20rem;
+    transition: all 0.2s;
+  }
+
+  &:hover,
+  &:active {
+    background-color: $btn-color-dark;
+  }
+
+  &--full {
+    background-color: $btn-color;
+    border: 1px solid $btn-color;
+    color: #fff;
+    margin-right: 1.5rem;
+
+    &:hover,
+    &:active {
+      border: 1px solid $btn-color-dark;
+    }
+  }
+
+  &--ghost {
+    border: 1px solid $btn-color;
+    color: $btn-color;
+
+    &:hover,
+    &:active {
+      border: 1px solid $btn-color-dark;
+      color: #fff;
+    }
+  }
+}
+
+.btn-box {
+  margin-top: 5rem;
+  &__img {
+    height: 5rem;
+    width: auto;
+    margin-right: 2rem;
+  }
+}

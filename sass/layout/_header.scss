@@ -1,0 +1,15 @@
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../../css/img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+
+  &__text-box {
+    position: absolute;
+    top: 55%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+  }
+}

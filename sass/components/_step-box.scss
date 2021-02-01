@@ -1,0 +1,16 @@
+.step-box {
+  &:first-child {
+    text-align: right;
+    padding-right: 6%;
+    margin-top: 3rem;
+  }
+
+  &:last-child {
+    padding-left: 3%;
+    margin-top: 7rem;
+  }
+
+  &__iphone {
+    width: 40%;
+  }
+}
