@@ -93,10 +93,11 @@ html {
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  font-weight: 400; }
+  font-weight: 400;
+  margin: 2rem 0 2rem 0; }
 
 .small-margin {
-  margin: 0 0 2rem 0; }
+  margin: 0 0 3rem 0; }
 
 .btn, .btn:link, .btn:visited {
   display: inline-block;
@@ -143,6 +144,12 @@ html {
 
 .step-box__iphone {
   width: 40%; }
+
+.step-box__img {
+  width: 100%; }
+
+.step-box__reset {
+  padding: 0; }
 
 .feature-box {
   padding: 1%;
@@ -198,6 +205,32 @@ html {
     font-size: 1.8rem;
     flex-basis: 80%;
     font-weight: 400; }
+
+.city-feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem; }
+  .city-feature__icon {
+    font-size: 2.5rem;
+    color: #e67e22;
+    display: inline-block;
+    width: 3rem;
+    text-align: center; }
+  .city-feature span {
+    font-size: 1.8rem;
+    margin-left: 0.5rem; }
+
+.link-cities, .link-cities:link, .link-cities:visited {
+  font-size: 1.8rem;
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e67e22;
+  transition: border-bottom 0.2s, color 0.2s; }
+
+.link-cities:hover, .link-cities:active {
+  color: #555;
+  border-bottom: 1px solid transparent; }
 
 section {
   padding: 8rem 0; }
