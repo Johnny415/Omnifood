@@ -1,0 +1,56 @@
+.plan-box {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0.7rem 0.8rem 1.6rem #efefef;
+
+  & div {
+    padding: 1.5rem;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  & div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  & div:last-child {
+    text-align: center;
+    border: 0;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 0.5rem 0;
+  }
+
+  &--price {
+    font-size: 400%;
+    margin-bottom: 1rem;
+    color: $btn-color;
+    & span {
+      font-size: 50%;
+    }
+  }
+
+  &--meal {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  &__icon {
+    font-size: 2.5rem;
+    color: $btn-color;
+    display: inline-block;
+    width: 3rem;
+    text-align: center;
+    vertical-align: middle;
+  }
+}

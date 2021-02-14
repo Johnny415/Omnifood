@@ -1,0 +1,38 @@
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+  & input {
+    font-size: 1.8rem;
+  }
+  &__input,
+  & textarea {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1.6rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ccc;
+  }
+
+  & select {
+    width: 100%;
+    font-size: 1.6rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ccc;
+  }
+
+  &__checkbox {
+    margin: 1rem 0.5rem 0.5rem 0;
+    vertical-align: middle;
+  }
+
+  &__span {
+    font-size: 1.6rem;
+    font-weight: 400;
+    vertical-align: middle;
+  }
+
+  & label {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+}
