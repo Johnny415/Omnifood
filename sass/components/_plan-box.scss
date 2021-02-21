@@ -5,6 +5,10 @@
   margin-left: 5%;
   box-shadow: 0.7rem 0.8rem 1.6rem #efefef;
 
+  @media only screen and (max-width: 767px) {
+    width: 90%;
+  }
+
   & div {
     padding: 1.5rem;
     border-bottom: 1px solid #e8e8e8;

@@ -1,3 +1,47 @@
 .small-margin {
   margin: 0 0 3rem 0;
 }
+
+.med-margin {
+  margin: 0 0 5rem 0;
+}
+
+//---- Media queries -------
+
+@media only screen and (max-width: 1200px) {
+  .header__text-box {
+    padding: 0 2%;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .header__text-box {
+    left: 45%;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 60%;
+  }
+  .header__text-box {
+    left: 55%;
+    width: 90%;
+  }
+  .row {
+    padding: 0 4%;
+  }
+  .col {
+    width: 100%;
+    margin: 0 0 4% 0;
+  }
+  .navigation__list {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header {
+    height: 80vh;
+  }
+}

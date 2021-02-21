@@ -3,6 +3,7 @@ html {
   font-family: "Lato", "Arial", "sans-serif";
   font-size: 62.5%;
   font-weight: 300;
+  overflow-x: hidden;
 }
 
 .heading-primary {
@@ -14,6 +15,9 @@ html {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   word-spacing: 0.4rem;
+  @media only screen and (max-width: 767px) {
+    font-size: 3rem;
+  }
 }
 
 .heading-secondary {
