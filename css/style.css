@@ -177,6 +177,71 @@ html {
   font-weight: 400;
   margin: 2rem 0 2rem 0; }
 
+.gooey {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: lightsteelblue;
+  filter: contrast(20);
+  z-index: 1000; }
+
+.patient {
+  position: absolute;
+  top: 55%;
+  left: 44%;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: orangered; }
+
+.dot {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 45%;
+  filter: blur(4px);
+  background: orangered;
+  border-radius: 50%;
+  transform: translateX(-50%, -50%);
+  animation: dot 2.8s infinite; }
+
+.dots {
+  transform: translateX(0);
+  margin-top: 18px;
+  margin-left: 31px;
+  animation: dots 2.8s infinite; }
+
+.dotOne {
+  display: block;
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin-left: 16px;
+  filter: blur(4px);
+  background: orangered;
+  border-radius: 50%; }
+
+.disappear {
+  animation: vanish 1s forwards; }
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden; } }
+
+@keyframes dot {
+  50% {
+    transform: translateX(96px); } }
+
+@keyframes dots {
+  50% {
+    transform: translateX(-31px); } }
+
 .small-margin {
   margin: 0 0 3rem 0; }
 
