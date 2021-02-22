@@ -58,3 +58,13 @@
     height: 70vh;
   }
 }
+@media only screen and (max-width: 350px) {
+  .header__text-box {
+    left: 50%;
+    top: 50%;
+    text-align: center;
+  }
+  .header {
+    height: 75vh;
+  }
+}

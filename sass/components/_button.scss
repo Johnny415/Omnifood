@@ -13,6 +13,10 @@
       padding: 1rem 2rem;
       margin-right: 0.5rem;
     }
+    @media only screen and (max-width: 330px) {
+      padding: 1rem 1.8rem;
+      margin-right: 0;
+    }
   }
 
   &:hover,
@@ -37,7 +41,9 @@
   &--ghost {
     border: 1px solid $btn-color;
     color: $btn-color;
-
+    @media only screen and (max-width: 304px) {
+      margin-top: 0.5rem;
+    }
     &:hover,
     &:active {
       border: 1px solid $btn-color-dark;
