@@ -16,7 +16,9 @@ blockquote {
 .johnny-blockquote {
   margin-bottom: 5.3rem;
   margin-top: 4rem;
-
+  @media only screen and (max-width: 475px) {
+    margin-bottom: 0.5rem;
+  }
   &:before {
     content: "\201C";
     font-size: 500%;

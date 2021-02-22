@@ -46,8 +46,7 @@ footer {
 .social-links {
   list-style: none;
   float: right;
-  @media only screen and (max-width: 480px) {
-    margin-right: 12rem;
+  @media only screen and (max-width: 486px) {
   }
   &__item {
     display: inline-block;

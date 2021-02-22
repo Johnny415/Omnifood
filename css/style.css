@@ -75,9 +75,6 @@ footer {
 .social-links {
   list-style: none;
   float: right; }
-  @media only screen and (max-width: 480px) {
-    .social-links {
-      margin-right: 12rem; } }
   .social-links__item {
     display: inline-block;
     margin-right: 2rem; }
@@ -149,7 +146,10 @@ html {
   word-spacing: 0.4rem; }
   @media only screen and (max-width: 767px) {
     .heading-primary {
-      font-size: 3rem; } }
+      font-size: 4rem; } }
+  @media only screen and (max-width: 475px) {
+    .heading-primary {
+      font-size: 2.5rem; } }
 
 .heading-secondary {
   font-size: 3rem;
@@ -200,12 +200,22 @@ html {
   .col {
     width: 100%;
     margin: 0 0 4% 0; }
+  .col-flex {
+    display: flex;
+    justify-content: center; }
   .navigation__list {
     display: none; } }
 
 @media only screen and (max-width: 480px) {
   .header {
     height: 80vh; } }
+
+@media only screen and (max-width: 375px) {
+  .header__text-box {
+    left: 50%;
+    top: 45%; }
+  .header {
+    height: 70vh; } }
 
 .btn, .btn:link, .btn:visited {
   display: inline-block;
@@ -215,6 +225,10 @@ html {
   text-decoration: none;
   border-radius: 20rem;
   transition: all 0.2s; }
+  @media only screen and (max-width: 375px) {
+    .btn, .btn:link, .btn:visited {
+      padding: 1rem 2rem;
+      margin-right: 0.5rem; } }
 
 .btn:hover, .btn:active {
   background-color: #cf6d17; }
@@ -224,6 +238,9 @@ html {
   border: 1px solid #e67e22;
   color: #fff;
   margin-right: 1.5rem; }
+  @media only screen and (max-width: 350px) {
+    .btn--full {
+      margin-right: 0; } }
   .btn--full:hover, .btn--full:active {
     border: 1px solid #cf6d17; }
 
@@ -240,6 +257,11 @@ html {
     height: 5rem;
     width: auto;
     margin-right: 2rem; }
+    @media only screen and (max-width: 375px) {
+      .btn-box__img {
+        margin-right: 0.5rem;
+        height: 4rem;
+        width: auto; } }
 
 .step-box:first-child {
   text-align: right;
@@ -300,6 +322,10 @@ html {
     height: auto;
     transform: scale(1.15);
     transition: transform 0.5s, opacity 0.5s; }
+    @media only screen and (max-width: 350px) {
+      .meals-showcase__img {
+        width: 120%;
+        height: auto; } }
     .meals-showcase__img:hover {
       opacity: 1;
       transform: scale(1.03); }
@@ -363,6 +389,9 @@ blockquote {
 .johnny-blockquote {
   margin-bottom: 5.3rem;
   margin-top: 4rem; }
+  @media only screen and (max-width: 475px) {
+    .johnny-blockquote {
+      margin-bottom: 0.5rem; } }
   .johnny-blockquote:before {
     content: "\201C";
     font-size: 500%;

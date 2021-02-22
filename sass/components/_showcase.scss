@@ -21,7 +21,10 @@
     height: auto;
     transform: scale(1.15);
     transition: transform 0.5s, opacity 0.5s;
-
+    @media only screen and(max-width:350px) {
+      width: 120%;
+      height: auto;
+    }
     &:hover {
       opacity: 1;
       transform: scale(1.03);
