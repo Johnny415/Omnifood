@@ -199,9 +199,10 @@ html {
 .patient {
   position: absolute;
   top: 55%;
-  left: 45%;
+  left: 44%;
   font-size: 2.5rem;
   font-weight: 500;
+  letter-spacing: 0.1rem;
   color: #e67e22; }
 
 .dot {
