@@ -7,6 +7,10 @@
     height: 10rem;
     width: auto;
     margin-top: 2rem;
+    @include respond(phone) {
+      height: 8rem;
+      width: auto;
+    }
   }
 
   &__list {

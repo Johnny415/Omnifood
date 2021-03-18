@@ -9,7 +9,7 @@
     text-decoration: none;
     border-radius: 20rem;
     transition: all 0.2s;
-    @media only screen and (max-width: 375px) {
+    @include respond(small-devices) {
       padding: 1rem 2rem;
       margin-right: 0.5rem;
     }
@@ -29,9 +29,7 @@
     border: 1px solid $btn-color;
     color: #fff;
     margin-right: 1.5rem;
-    @media only screen and (max-width: 350px) {
-      margin-right: 0;
-    }
+
     &:hover,
     &:active {
       border: 1px solid $btn-color-dark;
@@ -42,7 +40,7 @@
     border: 1px solid $btn-color;
     color: $btn-color;
     @media only screen and (max-width: 304px) {
-      margin-top: 0.5rem;
+      margin-top: 0.7rem;
     }
     &:hover,
     &:active {
@@ -54,14 +52,22 @@
 
 .btn-box {
   margin-top: 5rem;
+  @include respond(phone) {
+    padding-left: 1.5rem;
+  }
   &__img {
     height: 5rem;
     width: auto;
     margin-right: 2rem;
-    @media only screen and (max-width: 375px) {
+    @include respond(small-devices) {
       margin-right: 0.5rem;
       height: 4rem;
       width: auto;
     }
+  }
+}
+.form-btn {
+  @include respond(phone) {
+    margin-left: 9rem;
   }
 }

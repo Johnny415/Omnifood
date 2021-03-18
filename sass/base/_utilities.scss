@@ -1,9 +1,16 @@
 .small-margin {
   margin: 0 0 3rem 0;
 }
+.small-margin-top {
+  margin: 1rem 0 0 0;
+}
 
 .med-margin {
   margin: 0 0 5rem 0;
+}
+
+.center {
+  text-align: center;
 }
 
 //---- Media queries -------
@@ -21,7 +28,7 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@include respond(tablet) {
   html {
     font-size: 60%;
   }
@@ -49,7 +56,7 @@
     height: 80vh;
   }
 }
-@media only screen and (max-width: 375px) {
+@include respond(small-devices) {
   .header__text-box {
     left: 50%;
     top: 45%;

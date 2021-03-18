@@ -41,7 +41,7 @@ body {
 footer {
   background-color: #333;
   padding: 5rem; }
-  @media only screen and (max-width: 767px) {
+  @media (max-width: 47.9em) {
     footer {
       padding: 3rem;
       text-align: center; } }
@@ -54,30 +54,39 @@ footer {
 .footer-nav {
   list-style: none;
   float: left; }
-  @media only screen and (max-width: 767px) {
+  @media (max-width: 47.9em) {
     .footer-nav {
       width: 100%; } }
   .footer-nav__item {
     display: inline-block;
     margin-right: 2rem; }
-    @media only screen and (max-width: 767px) {
+    @media (max-width: 20em) {
       .footer-nav__item {
-        margin-right: 0.7rem; } }
+        margin-right: 1.3rem; } }
   .footer-nav__link, .footer-nav__link:link, .footer-nav__link:visited {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 400;
     text-decoration: none;
     color: #888;
     transition: color 0.2s; }
+    @media (max-width: 20em) {
+      .footer-nav__link, .footer-nav__link:link, .footer-nav__link:visited {
+        font-size: 1.6rem; } }
     .footer-nav__link:hover, .footer-nav__link:active, .footer-nav__link:link:hover, .footer-nav__link:link:active, .footer-nav__link:visited:hover, .footer-nav__link:visited:active {
       color: #ddd; }
 
 .social-links {
   list-style: none;
   float: right; }
+  @media (max-width: 20em) {
+    .social-links {
+      margin-top: 2rem; } }
   .social-links__item {
     display: inline-block;
     margin-right: 2rem; }
+    @media (max-width: 20em) {
+      .social-links__item {
+        padding: 1rem; } }
     .social-links__item:last-child {
       margin-right: 0; }
   .social-links__link, .social-links__link:link, .social-links__link:visited {
@@ -111,6 +120,10 @@ footer {
     height: 10rem;
     width: auto;
     margin-top: 2rem; }
+    @media (max-width: 20em) {
+      .navigation__logo {
+        height: 8rem;
+        width: auto; } }
   .navigation__list {
     list-style: none; }
   .navigation__item {
@@ -144,10 +157,10 @@ html {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   word-spacing: 0.4rem; }
-  @media only screen and (max-width: 767px) {
+  @media (max-width: 47.9em) {
     .heading-primary {
       font-size: 4rem; } }
-  @media only screen and (max-width: 475px) {
+  @media (max-width: 29.6em) {
     .heading-primary {
       font-size: 2.5rem; } }
   @media only screen and (max-width: 330px) {
@@ -175,7 +188,7 @@ html {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-weight: 400;
-  margin: 2rem 0 2rem 0; }
+  margin: 1rem 0 2rem 0; }
 
 .gooey {
   display: flex;
@@ -195,6 +208,9 @@ html {
   width: auto;
   top: 32%;
   left: 47%; }
+  @media (max-width: 20em) {
+    .preloader-logo {
+      left: 35%; } }
 
 .patient {
   position: absolute;
@@ -204,6 +220,9 @@ html {
   font-weight: 500;
   letter-spacing: 0.1rem;
   color: #e67e22; }
+  @media (max-width: 20em) {
+    .patient {
+      left: 25%; } }
 
 .dot {
   position: absolute;
@@ -215,6 +234,9 @@ html {
   border-radius: 50%;
   transform: translateX(-50%, -50%);
   animation: dot 2.8s infinite; }
+  @media (max-width: 20em) {
+    .dot {
+      left: 35%; } }
 
 .dots {
   transform: translateX(0);
@@ -250,8 +272,14 @@ html {
 .small-margin {
   margin: 0 0 3rem 0; }
 
+.small-margin-top {
+  margin: 1rem 0 0 0; }
+
 .med-margin {
   margin: 0 0 5rem 0; }
+
+.center {
+  text-align: center; }
 
 @media only screen and (max-width: 1200px) {
   .header__text-box {
@@ -262,7 +290,7 @@ html {
     left: 45%;
     width: 80%; } }
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 47.9em) {
   html {
     font-size: 60%; }
   .header__text-box {
@@ -283,7 +311,7 @@ html {
   .header {
     height: 80vh; } }
 
-@media only screen and (max-width: 375px) {
+@media (max-width: 23.4em) {
   .header__text-box {
     left: 50%;
     top: 45%; }
@@ -306,7 +334,7 @@ html {
   text-decoration: none;
   border-radius: 20rem;
   transition: all 0.2s; }
-  @media only screen and (max-width: 375px) {
+  @media (max-width: 23.4em) {
     .btn, .btn:link, .btn:visited {
       padding: 1rem 2rem;
       margin-right: 0.5rem; } }
@@ -323,9 +351,6 @@ html {
   border: 1px solid #e67e22;
   color: #fff;
   margin-right: 1.5rem; }
-  @media only screen and (max-width: 350px) {
-    .btn--full {
-      margin-right: 0; } }
   .btn--full:hover, .btn--full:active {
     border: 1px solid #cf6d17; }
 
@@ -334,30 +359,41 @@ html {
   color: #e67e22; }
   @media only screen and (max-width: 304px) {
     .btn--ghost {
-      margin-top: 0.5rem; } }
+      margin-top: 0.7rem; } }
   .btn--ghost:hover, .btn--ghost:active {
     border: 1px solid #cf6d17;
     color: #fff; }
 
 .btn-box {
   margin-top: 5rem; }
+  @media (max-width: 20em) {
+    .btn-box {
+      padding-left: 1.5rem; } }
   .btn-box__img {
     height: 5rem;
     width: auto;
     margin-right: 2rem; }
-    @media only screen and (max-width: 375px) {
+    @media (max-width: 23.4em) {
       .btn-box__img {
         margin-right: 0.5rem;
         height: 4rem;
         width: auto; } }
 
+@media (max-width: 20em) {
+  .form-btn {
+    margin-left: 9rem; } }
+
 .step-box:first-child {
   text-align: right;
   padding-right: 6%;
   margin-top: 3rem; }
-  @media only screen and (max-width: 767px) {
+  @media (max-width: 47.9em) {
     .step-box:first-child {
       text-align: center; } }
+  @media (max-width: 20em) {
+    .step-box:first-child {
+      text-align: center;
+      padding-right: 0; } }
 
 .step-box:last-child {
   padding-left: 3%;
@@ -365,7 +401,7 @@ html {
 
 .step-box__iphone {
   width: 40%; }
-  @media only screen and (max-width: 767px) {
+  @media (max-width: 47.9em) {
     .step-box__iphone {
       width: 40%; } }
 
@@ -378,6 +414,9 @@ html {
 .feature-box {
   padding: 1%;
   text-align: center; }
+  @media (max-width: 20em) {
+    .feature-box {
+      margin-top: 2rem; } }
   .feature-box__text {
     font-size: 1.8rem;
     font-weight: 300;
@@ -399,7 +438,11 @@ html {
     display: block;
     float: left;
     width: 25%; }
+    @media (max-width: 20em) {
+      .meals-showcase__item {
+        width: 50%; } }
   .meals-showcase__figure {
+    position: relative;
     width: 100%;
     margin: 0;
     overflow: hidden;
@@ -410,10 +453,6 @@ html {
     height: auto;
     transform: scale(1.15);
     transition: transform 0.5s, opacity 0.5s; }
-    @media only screen and (max-width: 350px) {
-      .meals-showcase__img {
-        width: 120%;
-        height: auto; } }
     .meals-showcase__img:hover {
       opacity: 1;
       transform: scale(1.03); }
@@ -467,6 +506,9 @@ blockquote {
   line-height: 145%;
   position: relative;
   margin-top: 4rem; }
+  @media (max-width: 29.6em) {
+    blockquote {
+      margin-top: 6rem; } }
   blockquote:before {
     content: "\201C";
     font-size: 500%;
@@ -477,8 +519,9 @@ blockquote {
 .johnny-blockquote {
   margin-bottom: 5.3rem;
   margin-top: 4rem; }
-  @media only screen and (max-width: 475px) {
+  @media (max-width: 29.6em) {
     .johnny-blockquote {
+      margin-top: 6rem;
       margin-bottom: 0.5rem; } }
   .johnny-blockquote:before {
     content: "\201C";
@@ -490,6 +533,9 @@ blockquote {
 .cite-customer {
   font-size: 90%;
   display: block; }
+  @media (max-width: 20em) {
+    .cite-customer {
+      text-align: right; } }
 
 .cite-img {
   height: 5rem;
@@ -501,7 +547,10 @@ blockquote {
   font-size: 90%;
   height: 5rem;
   border-radius: 50%;
-  margin-right: 1rem; }
+  display: block; }
+  @media (max-width: 20em) {
+    .johnny-cite {
+      text-align: right; } }
   .johnny-cite__img {
     height: 5rem;
     width: 4.7rem;
@@ -515,7 +564,7 @@ blockquote {
   width: 90%;
   margin-left: 5%;
   box-shadow: 0.7rem 0.8rem 1.6rem #efefef; }
-  @media only screen and (max-width: 767px) {
+  @media (max-width: 47.9em) {
     .plan-box {
       width: 90%; } }
   .plan-box div {
@@ -554,7 +603,7 @@ blockquote {
 .contact-form {
   width: 60%;
   margin: 0 auto; }
-  @media only screen and (max-width: 767px) {
+  @media (max-width: 47.9em) {
     .contact-form {
       width: 80%; } }
   @media only screen and (max-width: 468px) {
@@ -587,7 +636,7 @@ blockquote {
 
 section {
   padding: 8rem 0; }
-  @media only screen and (max-width: 767px) {
+  @media (max-width: 47.9em) {
     section {
       padding: 6rem 0; } }
   @media only screen and (max-width: 468px) {

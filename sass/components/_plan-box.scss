@@ -5,7 +5,7 @@
   margin-left: 5%;
   box-shadow: 0.7rem 0.8rem 1.6rem #efefef;
 
-  @media only screen and (max-width: 767px) {
+  @include respond(tablet) {
     width: 90%;
   }
 

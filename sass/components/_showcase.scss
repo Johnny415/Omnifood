@@ -6,9 +6,13 @@
     display: block;
     float: left;
     width: 25%;
+    @include respond(phone) {
+      width: 50%;
+    }
   }
 
   &__figure {
+    position: relative;
     width: 100%;
     margin: 0;
     overflow: hidden;
@@ -21,10 +25,7 @@
     height: auto;
     transform: scale(1.15);
     transition: transform 0.5s, opacity 0.5s;
-    @media only screen and(max-width:350px) {
-      width: 120%;
-      height: auto;
-    }
+
     &:hover {
       opacity: 1;
       transform: scale(1.03);

@@ -1,6 +1,9 @@
 .feature-box {
   padding: 1%;
   text-align: center;
+  @include respond(phone) {
+    margin-top: 2rem;
+  }
 
   &__text {
     font-size: 1.8rem;
