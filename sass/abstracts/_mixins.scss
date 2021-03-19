@@ -14,7 +14,7 @@
   }
 
   @if $breakpoint == medium-devices {
-    @media (max-width: 29.6em) {
+    @media (max-width: 29.8em) {
       //475px
       @content;
     }

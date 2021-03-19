@@ -7,9 +7,11 @@
     height: 10rem;
     width: auto;
     margin-top: 2rem;
+    @include respond(medium-devices) {
+      height: 9rem;
+    }
     @include respond(phone) {
-      height: 8rem;
-      width: auto;
+      height: 7rem;
     }
   }
 

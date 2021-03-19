@@ -34,7 +34,7 @@ blockquote {
 .cite-customer {
   font-size: 90%;
   display: block;
-  @include respond(phone) {
+  @include respond(medium-devices) {
     text-align: right;
   }
 }
@@ -52,7 +52,7 @@ blockquote {
   border-radius: 50%;
 
   display: block;
-  @include respond(phone) {
+  @include respond(medium-devices) {
     text-align: right;
   }
   &__img {

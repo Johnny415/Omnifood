@@ -52,8 +52,13 @@
 
 .btn-box {
   margin-top: 5rem;
-  @include respond(phone) {
-    padding-left: 1.5rem;
+  @include respond(medium-devices) {
+    display: flex;
+    justify-content: center;
+    &__small-margin {
+      margin-top: 1rem;
+      text-align: center;
+    }
   }
   &__img {
     height: 5rem;

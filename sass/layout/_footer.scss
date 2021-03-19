@@ -21,7 +21,7 @@ footer {
   }
   &__item {
     display: inline-block;
-    margin-right: 2rem;
+    // margin-right: 2rem;
     @include respond(phone) {
       margin-right: 1.3rem;
     }
@@ -30,6 +30,8 @@ footer {
     &,
     &:link,
     &:visited {
+      display: inline-block;
+      padding: 0.8rem;
       font-size: 1.8rem;
       font-weight: 400;
       text-decoration: none;
@@ -48,13 +50,14 @@ footer {
 .social-links {
   list-style: none;
   float: right;
-  @include respond(phone) {
+
+  @include respond(medium-devices) {
     margin-top: 2rem;
   }
   &__item {
     display: inline-block;
-    margin-right: 2rem;
-    @include respond(phone) {
+
+    @include respond(medium-devices) {
       padding: 1rem;
     }
     &:last-child {
@@ -65,9 +68,13 @@ footer {
     &,
     &:link,
     &:visited {
-      font-size: 2rem;
+      font-size: 2.5rem;
+      padding: 1rem;
       text-decoration: none;
       color: #888;
+      @include respond(phone) {
+        padding: 0.7rem;
+      }
     }
   }
 }

@@ -6,7 +6,7 @@
     @include respond(tablet) {
       text-align: center;
     }
-    @include respond(phone) {
+    @include respond(medium-devices) {
       text-align: center;
       padding-right: 0;
     }

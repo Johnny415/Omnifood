@@ -6,7 +6,7 @@
     display: block;
     float: left;
     width: 25%;
-    @include respond(phone) {
+    @include respond(medium-devices) {
       width: 50%;
     }
   }

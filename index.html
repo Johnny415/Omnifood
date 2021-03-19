@@ -16,15 +16,16 @@
   </head>
   <body>
     <div class="gooey">
-      <div class="container">
+      <div class="container-preloader">
         <img src="img/favicon.png" class="preloader-logo" alt="logo" />
-        <h3 class="patient">Be patient now...</h3>
+
         <span class="dot"></span>
         <div class="dots">
           <span class="dotOne"></span>
           <span class="dotOne"></span>
           <span class="dotOne"></span>
         </div>
+        <h3 class="patient">Be patient now...</h3>
       </div>
     </div>
 
@@ -524,11 +525,13 @@
               <label>&nbsp;</label>
             </div>
             <div class="col span-2-of-3">
-              <input
-                type="submit"
-                value="Send it!"
-                class="btn btn--full form-btn"
-              />
+              <div class="btn-box__small-margin">
+                <input
+                  type="submit"
+                  value="Send it!"
+                  class="btn btn--full form-btn"
+                />
+              </div>
             </div>
           </div>
         </form>
