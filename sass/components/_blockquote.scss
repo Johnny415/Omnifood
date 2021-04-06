@@ -1,26 +1,12 @@
 blockquote {
-  padding: 2%;
+  padding: 0.6rem;
   font-style: italic;
   line-height: 145%;
   position: relative;
   margin-top: 4rem;
+  flex-grow: 1;
   @include respond(medium-devices) {
     margin-top: 6rem;
-  }
-  &:before {
-    content: "\201C";
-    font-size: 500%;
-    display: block;
-    position: absolute;
-    top: -0.5rem;
-  }
-}
-.johnny-blockquote {
-  margin-bottom: 5.3rem;
-  margin-top: 4rem;
-  @include respond(medium-devices) {
-    margin-top: 6rem;
-    margin-bottom: 0.5rem;
   }
   &:before {
     content: "\201C";
@@ -46,20 +32,21 @@ blockquote {
   vertical-align: middle;
 }
 
-.johnny-cite {
-  font-size: 90%;
-  height: 5rem;
-  border-radius: 50%;
+.img-width {
+  width: 4.7rem;
+}
+.blockquote-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.row-flex {
+  display: flex;
 
-  display: block;
-  @include respond(medium-devices) {
-    text-align: right;
+  @include respond(tablet) {
+    flex-direction: column;
   }
-  &__img {
-    height: 5rem;
-    width: 4.7rem;
-    border-radius: 50%;
-    margin-right: 1rem;
-    vertical-align: middle;
-  }
+}
+.col-flex {
+  display: flex;
+  flex-direction: column;
 }

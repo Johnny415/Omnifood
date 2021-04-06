@@ -13,19 +13,16 @@
     font-size: 1.8rem;
   }
   &__input,
-  & textarea {
+  & textarea,
+  & select {
     width: 100%;
     padding: 0.7rem;
     font-size: 1.6rem;
     border-radius: 0.3rem;
     border: 1px solid #ccc;
   }
-
   & select {
-    width: 100%;
-    font-size: 1.6rem;
-    border-radius: 0.3rem;
-    border: 1px solid #ccc;
+    cursor: pointer;
   }
 
   &__checkbox {
@@ -43,4 +40,13 @@
     font-size: 1.8rem;
     font-weight: 400;
   }
+}
+.form-btn-wrapper {
+  text-align: center;
+  @include respond(tablet) {
+    text-align: right;
+  }
+}
+.form-btn {
+  margin-top: 2rem;
 }

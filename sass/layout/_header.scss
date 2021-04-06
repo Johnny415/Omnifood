@@ -11,5 +11,16 @@
     top: 55%;
     left: 33%;
     transform: translate(-50%, -50%);
+    @include respond(medium-devices) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transform: translate(-55%, -50%);
+    }
+    @media only screen and (max-width: 375px) {
+      transform: translate(-50%, -50%);
+    }
   }
 }

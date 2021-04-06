@@ -5,7 +5,6 @@ html {
   font-weight: 300;
   overflow-x: hidden;
 }
-
 .heading-primary {
   margin: 0;
   margin-bottom: 2rem;
@@ -18,20 +17,20 @@ html {
   @include respond(tablet) {
     font-size: 3rem;
   }
-  @include respond(medium-devices) {
+
+  @media only screen and (max-width: 375px) {
     font-size: 2.5rem;
   }
-  @media only screen and (max-width: 380px) {
-    font-size: 2rem;
-  }
 }
-
 .heading-secondary {
   font-size: 3rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   text-align: center;
+  @media only screen and (max-width: 375px) {
+    font-size: 2.3rem;
+  }
 
   &:after {
     content: " ";
@@ -44,7 +43,6 @@ html {
     margin-bottom: 2rem;
   }
 }
-
 .heading-tertiary {
   font-size: 2rem;
   text-transform: uppercase;

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="vendors/css/normalize.css" />
     <link rel="stylesheet" href="vendors/css/grid.css" />
     <link rel="stylesheet" href="vendors/css/ionicons.min.css" />
+    <link rel="stylesheet" href="vendors/css/animate.css" />
     <link rel="shortcut icon" type="img/png" href="img/favicon.png" />
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -18,12 +19,13 @@
     <div class="gooey">
       <div class="container-preloader">
         <img src="img/favicon.png" class="preloader-logo" alt="logo" />
-
-        <span class="dot"></span>
-        <div class="dots">
-          <span class="dotOne"></span>
-          <span class="dotOne"></span>
-          <span class="dotOne"></span>
+        <div class="dots-container">
+          <span class="dot"></span>
+          <div class="dots">
+            <span class="dotOne"></span>
+            <span class="dotOne"></span>
+            <span class="dotOne"></span>
+          </div>
         </div>
         <h3 class="patient">Be patient now...</h3>
       </div>
@@ -31,26 +33,33 @@
 
     <header class="header">
       <div class="row">
-        <nav class="navigation">
+        <nav class="navigation sticky">
           <img
             src="img/logo-white.png"
             alt="Omnifood logo"
-            class="navigation__logo"
+            class="logo"
           />
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Food delivery</a>
+          <img
+            src="img/logo black.png"
+            alt="Omnifood logo"
+            class="logo-black"
+          />
+
+          <ul class="navigation__list sticky__list js--main-nav">
+            <li class="navigation__item sticky__item">
+              <a href="#features" class="nav-link">Food delivery</a>
             </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">How it works</a>
+            <li class="navigation__item sticky__item">
+              <a href="#steps" class="nav-link">How it works</a>
             </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Our cities</a>
+            <li class="navigation__item sticky__item">
+              <a href="#cities" class="nav-link">Our cities</a>
             </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Sign up</a>
+            <li class="navigation__item sticky__item">
+              <a href="#plans" class="nav-link">Sign up</a>
             </li>
           </ul>
+          <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
         </nav>
       </div>
       <div class="header__text-box">
@@ -58,25 +67,27 @@
           Goodbye junk food.<br />
           Hello super healthy meals.
         </h1>
-        <a href="#" class="btn btn--full"> I’m hungry</a>
-        <a href="#" class="btn btn--ghost"> Show me more</a>
+        <div class="btn-wrapper">
+          <a href="#" class="btn btn--full js--scroll-to-plans"> I’m hungry</a>
+          <a href="#" class="btn btn--ghost js--scroll-to-start"> Show me more</a>
+        </div>
       </div>
     </header>
 
-    <section class="section-features">
+    <section class="section-features js--section-features" id='features'>
       <div class="row">
         <div class="feature-box">
           <h2 class="heading-secondary small-margin">
             Get food fast &mdash; not fast food.
           </h2>
-          <p class="feature-box__text feature-box__text--long">
+          <p class="section-features__subtitle">
             Hello, we’re Omnifood, your new premium food delivery service. We
             know you’re always busy. No time for cooking. So let us take care of
             that, we’re really good at it, we promise!
           </p>
         </div>
       </div>
-      <div class="row">
+      <div class="row js--wp-1">
         <div class="col span-1-of-4">
           <div class="feature-box">
             <i class="feature-box__icon ion-ios-infinite-outline"></i>
@@ -171,7 +182,7 @@
       </ul>
     </section>
 
-    <section class="section-steps">
+    <section class="section-steps"id='steps'>
       <div class="row">
         <h2 class="heading-secondary">
           How it works &mdash; Simple as 1, 2, 3
@@ -182,7 +193,7 @@
           <img
             src="img/app-iPhone.png"
             alt="iphone photo"
-            class="step-box__iphone"
+            class="step-box__iphone js--wp-2"
           />
         </div>
         <div class="col span-1-of-2 step-box">
@@ -223,14 +234,14 @@
         </div>
       </div>
     </section>
-    <section class="section-cities">
+    <section class="section-cities" id='cities'>
       <div class="row">
         <h2 class="heading-secondary small-margin">
           We're currently in these cities
         </h2>
       </div>
-      <div class="row">
-        <div class="col span-1-of-4 step box">
+      <div class="row js--wp-3">
+        <div class="col span-1-of-4">
           <img src="img/lisbon-3.jpg" alt="Lisabon img" class="step-box__img" />
           <h3 class="heading-tertiary">Lisabon</h3>
           <div class="city-feature">
@@ -242,11 +253,10 @@
             <span>60+ top chefs</span>
           </div>
           <div class="city-feature">
-            <i class="city-feature__icon ion-social-twitter"></i>
-            <a href="#" class="link-cities">@omnifood_lx</a>
+            <a href="#" class="link-cities"> <i class="city-feature__icon ion-social-twitter"></i>@omnifood_lx</a>
           </div>
         </div>
-        <div class="col span-1-of-4 step-box">
+        <div class="col span-1-of-4">
           <img
             src="img/san-francisco.jpg"
             alt="San Francisco img"
@@ -262,11 +272,10 @@
             <span>160+ top chefs</span>
           </div>
           <div class="city-feature">
-            <i class="city-feature__icon ion-social-twitter"></i>
-            <a href="#" class="link-cities">@omnifood_sf</a>
+             <a href="#" class="link-cities"><i class="city-feature__icon ion-social-twitter"></i>@omnifood_sf</a>
           </div>
         </div>
-        <div class="col span-1-of-4 step-box">
+        <div class="col span-1-of-4">
           <img src="img/berlin.jpg" alt="Berlin img" class="step-box__img" />
           <h3 class="heading-tertiary">Berlin</h3>
           <div class="city-feature">
@@ -278,11 +287,10 @@
             <span>110+ top chefs</span>
           </div>
           <div class="city-feature">
-            <i class="city-feature__icon ion-social-twitter"></i>
-            <a href="#" class="link-cities">@omnifood_berlin</a>
+            <a href="#" class="link-cities"> <i class="city-feature__icon ion-social-twitter"></i>@omnifood_berlin</a>
           </div>
         </div>
-        <div class="col span-1-of-4 step-box__reset">
+        <div class="col span-1-of-4">
           <img src="img/london.jpg" alt="London img" class="step-box__img" />
           <h3 class="heading-tertiary">London</h3>
           <div class="city-feature">
@@ -294,8 +302,7 @@
             <span>50+ top chefs</span>
           </div>
           <div class="city-feature">
-            <i class="city-feature__icon ion-social-twitter"></i>
-            <a href="#" class="link-cities">@omnifood_london</a>
+            <a href="#" class="link-cities"> <i class="city-feature__icon ion-social-twitter"></i>@omnifood_london</a>
           </div>
         </div>
       </div>
@@ -306,42 +313,45 @@
           Our customers can't live without us
         </h2>
       </div>
-      <div class="row">
-        <div class="col span-1-of-3">
+      <div class="row row-flex">
+        <div class="col span-1-of-3 col-flex">
           <blockquote>
             Omnifood is just awesome! I just launched a startup which leaves me
             with no time for cooking, so Omnifood is a life-saver. Now that I
             got used to it, I couldn't live without my daily meals!
           </blockquote>
-          <cite class="cite-customer small-margin-top"
-            ><img src="img/customer-1.jpg" class="cite-img" />Alberto
+          <cite class="cite-customer small-margin-top">
+            <img src="img/customer-1.jpg" class="cite-img" />Alberto
             Duncan</cite
           >
         </div>
-        <div class="col span-1-of-3">
-          <blockquote>
-            Inexpensive, healthy and great-tasting meals, delivered right to my
-            home. We have lots of food delivery here in Lisbon, but no one comes
-            even close to Omifood. Me and my family are so in love!
-          </blockquote>
-          <cite class="cite-customer"
+        <div class="col span-1-of-3 col-flex">
+          
+            <blockquote>
+              Inexpensive, healthy and great-tasting meals, delivered right to my
+              home. We have lots of food delivery here in Lisbon, but no one comes
+              even close to Omifood. Me and my family are so in love!
+            </blockquote>
+            <cite class="cite-customer"
             ><img src="img/customer-2.jpg" class="cite-img" />Joana Silva</cite
-          >
+            >
+        
         </div>
-        <div class="col span-1-of-3">
-          <blockquote class="johnny-blockquote">
-            Food here sucks balls!!! Highly NOT recommended. What a waste of
-            time and money!
-          </blockquote>
-          <cite class="johnny-cite"
-            ><img src="img/johnny3.jpg" class="johnny-cite__img" />Johnny
+        <div class="col span-1-of-3 col-flex">
+        
+            <blockquote>
+               Food here sucks balls!!! Highly NOT recommended. What a waste of
+              time and money!
+             </blockquote>
+            <cite class="cite-customer"
+            ><img src="img/johnny3.jpg" class="cite-img img-width" />Johnny
             Gajic</cite
-          >
-        </div>
+            >
+        
       </div>
     </section>
 
-    <section class="section-plans">
+    <section class="section-plans js--section-plans"id='plans'>
       <div class="row">
         <h2 class="heading-secondary small-margin">
           Start eating healthy today
@@ -349,7 +359,7 @@
       </div>
       <div class="row">
         <div class="col span-1-of-3">
-          <div class="plan-box">
+          <div class="plan-box js--wp-4">
             <div>
               <h3 class="heading-tertiary">Premium</h3>
               <p class="plan-box--price">399$ <span>/ month</span></p>
@@ -521,11 +531,9 @@
             </div>
           </div>
           <div class="row">
-            <div class="col span-1-of-3">
-              <label>&nbsp;</label>
-            </div>
-            <div class="col span-2-of-3">
-              <div class="btn-box__small-margin">
+            <label>&nbsp;</label>
+              <div class="col span-2-of-3">
+              <div class="form-btn-wrapper">
                 <input
                   type="submit"
                   value="Send it!"
@@ -588,6 +596,13 @@
         <p>Copyright &copy; 2021 by Omnifood.All rights reserved.</p>
       </div>
     </footer>
-    <script src="script.js" charset="utf-8"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+
+    <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

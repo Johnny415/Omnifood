@@ -21,25 +21,20 @@ footer {
   }
   &__item {
     display: inline-block;
-    // margin-right: 2rem;
-    @include respond(phone) {
-      margin-right: 1.3rem;
-    }
   }
   &__link {
     &,
     &:link,
     &:visited {
       display: inline-block;
+
       padding: 0.8rem;
       font-size: 1.8rem;
       font-weight: 400;
       text-decoration: none;
       color: #888;
       transition: color 0.2s;
-      @include respond(phone) {
-        font-size: 1.6rem;
-      }
+
       &:hover,
       &:active {
         color: #ddd;
@@ -50,7 +45,11 @@ footer {
 .social-links {
   list-style: none;
   float: right;
+  text-align: right;
 
+  @include respond(tablet) {
+    text-align: center;
+  }
   @include respond(medium-devices) {
     margin-top: 2rem;
   }
@@ -68,14 +67,20 @@ footer {
     &,
     &:link,
     &:visited {
+      display: inline-block;
+      position: relative;
+      padding: 2rem;
       font-size: 2.5rem;
-      padding: 1rem;
       text-decoration: none;
       color: #888;
-      @include respond(phone) {
-        padding: 0.7rem;
-      }
     }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 .ion-social-facebook,

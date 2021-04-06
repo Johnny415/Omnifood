@@ -1,3 +1,15 @@
+.section-features {
+  &__subtitle {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 3rem;
+    font-weight: 400;
+  }
+}
+
 .feature-box {
   padding: 1%;
   text-align: center;
@@ -9,13 +21,6 @@
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 2.5rem;
-
-    &--long {
-      width: 70%;
-      margin-left: 15%;
-      margin-bottom: 3rem;
-      font-weight: 400;
-    }
   }
 
   &__icon {
