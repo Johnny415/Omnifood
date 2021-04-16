@@ -1,18 +1,14 @@
 //-------- Preloader -------------
 
 let loader = document.querySelector(".gooey");
+let body = document.querySelector(".body");
 
 window.addEventListener("load", vanish);
 
 function vanish() {
   loader.classList.add("disappear");
+  body.classList.remove("loading");
 }
-
-$(document).ready(function () {
-  $("h1").click(function () {
-    $(this).css("background-color", "#ff0000");
-  });
-});
 
 //------- Sticky navigation ----------
 
@@ -47,18 +43,16 @@ $(function () {
         this.pathname.replace(/^\//, "") &&
       location.hostname == this.hostname
     ) {
-      console.log("test");
       var target = $(this.hash);
       target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
       if (target.length) {
-        console.log("test2");
         $("html,body").animate(
           {
             scrollTop: target.offset().top,
           },
           1000
         );
-        console.log("test3");
+
         return false;
       }
     }

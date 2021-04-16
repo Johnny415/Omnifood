@@ -22,7 +22,7 @@ body {
   overflow-x: hidden; }
 
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../css/img/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../css/img/hero-min.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -105,6 +105,14 @@ footer {
     font-size: 2.5rem;
     text-decoration: none;
     color: #888; }
+    .social-links__link:hover .ion-social-facebook, .social-links__link:active .ion-social-facebook, .social-links__link:link:hover .ion-social-facebook, .social-links__link:link:active .ion-social-facebook, .social-links__link:visited:hover .ion-social-facebook, .social-links__link:visited:active .ion-social-facebook {
+      color: #3b5998; }
+    .social-links__link:hover .ion-social-twitter, .social-links__link:active .ion-social-twitter, .social-links__link:link:hover .ion-social-twitter, .social-links__link:link:active .ion-social-twitter, .social-links__link:visited:hover .ion-social-twitter, .social-links__link:visited:active .ion-social-twitter {
+      color: #00aced; }
+    .social-links__link:hover .ion-social-googleplus, .social-links__link:active .ion-social-googleplus, .social-links__link:link:hover .ion-social-googleplus, .social-links__link:link:active .ion-social-googleplus, .social-links__link:visited:hover .ion-social-googleplus, .social-links__link:visited:active .ion-social-googleplus {
+      color: #dd4b39; }
+    .social-links__link:hover .ion-social-instagram, .social-links__link:active .ion-social-instagram, .social-links__link:link:hover .ion-social-instagram, .social-links__link:link:active .ion-social-instagram, .social-links__link:visited:hover .ion-social-instagram, .social-links__link:visited:active .ion-social-instagram {
+      color: #517fa4; }
   .social-links__icon {
     position: absolute;
     top: 50%;
@@ -117,9 +125,9 @@ footer {
 .ion-social-instagram {
   transition: color 0.2s; }
 
-.ion-social-facebook:hover {
-  color: #3b5998; }
-
+/*.ion-social-facebook:hover {
+  color: #3b5998;
+}*/
 .ion-social-twitter:hover {
   color: #00aced; }
 
@@ -145,6 +153,7 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
+  padding: 0 2rem;
   background-color: rgba(255, 255, 255, 0.98);
   box-shadow: 0 2px 2px #efefef;
   display: flex;
@@ -290,7 +299,7 @@ html {
   width: 100%;
   height: 100%;
   background: #f4f4f4;
-  z-index: 1000; }
+  z-index: 1236; }
 
 .preloader-logo {
   width: 10rem; }
@@ -362,6 +371,10 @@ html {
 .js--wp-3.animated {
   opacity: 1; }
 
+.loading {
+  overflow: hidden;
+  height: 100vh; }
+
 .small-margin {
   margin: 0 0 3rem 0; }
 
@@ -373,6 +386,9 @@ html {
 
 .center {
   text-align: center; }
+
+.right {
+  text-align: right; }
 
 @media only screen and (max-width: 1200px) {
   .header__text-box {
@@ -426,7 +442,7 @@ html {
 
 @media only screen and (max-width: 350px) {
   .header__text-box {
-    top: 50%; } }
+    top: 55%; } }
 
 .btn, .btn:link, .btn:visited {
   display: inline-block;
@@ -489,6 +505,9 @@ html {
   @media (max-width: 29.8em) {
     .btn-wrapper {
       flex-direction: column; } }
+
+.form-btn {
+  margin-top: 2rem; }
 
 .step-box:first-child {
   text-align: right;
@@ -703,8 +722,6 @@ blockquote {
   @media only screen and (max-width: 468px) {
     .contact-form {
       width: 100%; } }
-  .contact-form input {
-    font-size: 1.8rem; }
   .contact-form__input,
   .contact-form textarea,
   .contact-form select {
@@ -732,9 +749,6 @@ blockquote {
     .form-btn-wrapper {
       text-align: right; } }
 
-.form-btn {
-  margin-top: 2rem; }
-
 section {
   padding: 8rem 0; }
   @media (max-width: 47.9em) {
@@ -751,7 +765,7 @@ section {
   background-color: #f4f4f4; }
 
 .section-testimonials {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../img/back-customers.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../img/back-customers-min.jpg);
   background-size: cover;
   color: #fff;
   font-size: 1.8rem;

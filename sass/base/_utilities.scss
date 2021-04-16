@@ -12,6 +12,9 @@
 .center {
   text-align: center;
 }
+.right {
+  text-align: right;
+}
 
 //---- Media queries -------
 
@@ -86,6 +89,6 @@
 }
 @media only screen and (max-width: 350px) {
   .header__text-box {
-    top: 50%;
+    top: 55%;
   }
 }

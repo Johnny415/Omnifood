@@ -9,7 +9,7 @@
   height: 100%;
   background: #f4f4f4;
   //filter: contrast(20);
-  z-index: 1000;
+  z-index: 1236;
 }
 .preloader-logo {
   width: 10rem;
@@ -89,4 +89,8 @@
 .js--wp-2.animated,
 .js--wp-3.animated {
   opacity: 1;
+}
+.loading {
+  overflow: hidden;
+  height: 100vh;
 }
